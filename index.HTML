@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Модель Stapell</title>
     <style>
-        body { margin: 0; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; background-color: #f5f5f5; }
+        body { margin: 0; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; background-color: #f0f0f0; }
         model-viewer {
-            width: 95%;
+            width: 95vw;
             height: 85vh;
-            background-color: #ffffff;
-            border-radius: 15px;
-            margin-top: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background-color: #fff;
+            border-radius: 12px;
+            margin-top: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        h1 { margin-top: 20px; font-size: 1.5rem; color: #333; }
+        h1 { margin-top: 15px; font-size: 1.2rem; color: #444; }
     </style>
 </head>
 <body>
 
-    <h1>Визуализация модели Stapell</h1>
+    <h1>3D Визуализация: Stapel</h1>
 
-    <!-- ИСПРАВЛЕННЫЙ СКРИПТ -->
+    <!-- Правильная ссылка на библиотеку -->
     <script type="module" src="ajax.googleapis.com"></script>
 
     <model-viewer
@@ -31,6 +31,7 @@
         auto-rotate 
         shadow-intensity="1"
         ar
+        camera-orbit="45deg 75deg auto"
         touch-action="pan-y">
     </model-viewer>
 
